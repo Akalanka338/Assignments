@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in class case 4</title>
+    <style>
+        main{
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            margin: auto;
+
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        main>section{
+            width: 1600px;
+            height: 300px;
+            border: 1px solid red;
+            display:flex ;
+
+            animation-name: slide-animation;
+            animation-duration: 10s;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+        }
+        main>section>div{
+            width: 400px;
+            height: 300px;
+
+        }
+
+        main>section>div:nth-child(1){
+            background-image: url("assets/photos/slide1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section>div:nth-child(2){
+            background-image:url("assets/photos/slide2.png") ;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section>div:nth-child(3){
+            background-image:url("assets/photos/slide3.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section>div:nth-child(4){
+            background-image: url("assets/photos/slide4.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        @keyframes slide-animation {
+            0%{
+                transform: translateX(-0%);
+            }
+            25%{
+                transform: translateX(-25%);
+            }
+            50%{
+                transform: translateX(-50%);
+            }
+            75%{
+                transform: translateX(-75%);
+            }
+            /*100%{
+                transform: translateX(100%);
+            }*/
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>

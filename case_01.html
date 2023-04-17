@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trnasition in css</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
+    <style>
+        /*.hover{
+            width: 100px;
+            height:100px;
+
+            !*aspect-ratio: 1/1;*!
+            background-color: orange;
+            transition-duration: 3s;
+            position: absolute;
+            display: block;
+            flex-direction: row;
+        }
+        .hover:hover{
+            width: 300px;
+            background-color: forestgreen;
+        }*/
+
+    /*    button{
+            width: 100px;
+            height: 30px;
+            background-color: cornflowerblue;
+            transition-duration: 3s;
+        }
+
+        button:hover{
+            background-color: #ff253a;
+            font-weight: bold;
+
+            width: 200px;
+            transform:rotate(360deg);
+
+        }*/
+        section{
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section>div{
+            background-color:cornflowerblue ;
+            width: 250px;
+            height: 50px;
+            margin: 10px 0px 10px 0px;
+            position: relative;
+            transition-duration: 2s;
+            right: 200px;
+        }
+        section>div>h3{
+            position: absolute;
+            width: max-content;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: max-content;
+            left: 10px;
+        }
+
+        section>div:hover{
+            right: 10px;
+        }
+        section>div>i{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: max-content;
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div>
+        <h3>Menu one</h3>
+        <i class="fa-solid fa-house"></i>
+
+    </div>
+    <div>
+        <h3>Menu two</h3>
+        <i class="fa-solid fa-user"></i>
+    </div>
+    <div>
+        <h3>Menu three</h3>
+        <i class="fa-solid fa-phone"></i>
+    </div>
+    <div>
+        <h3>Menu four</h3>
+        <i class="fa-solid fa-envelope"></i>
+    </div>
+    <div>
+        <h3>Menu five</h3>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+</section>
+</body>
+</html>
